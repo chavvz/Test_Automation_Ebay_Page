@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--<suite name="Ebay Automation" parallel="tests" thread-count="2">-->
+<suite name="Ebay Automation">
+
+    <test name="Chrome Execution">
+        <parameter name="browser" value="Chrome" />
+        <parameter name="siteURL" value="https://www.ebay.com/" />
+        <parameter name="categorySelection" value="Cell Phones &amp; Accessories" />
+        <classes>
+            <class name="webDriver"></class>
+            <class name="navigateToEBay"></class>
+            <class name="selectCategory"></class>
+            <class name="searchBymobile"></class>
+            <class name="chooseTheFirstResults"></class>
+            <class name="shoppingCart"></class>
+            <class name="checkout"></class>
+        </classes>
+    </test>
+
+    <test name="Edge Execution">
+        <parameter name="browser" value="Edge" />
+        <parameter name="siteURL" value="https://www.ebay.com/" />
+        <parameter name="categorySelection" value="Cell Phones &amp; Accessories" />
+        <classes>
+            <class name="webDriver"></class>
+            <class name="navigateToEBay"></class>
+            <class name="selectCategory"></class>
+            <class name="searchBymobile"></class>
+            <class name="chooseTheFirstResults"></class>
+            <class name="shoppingCart"></class>
+            <class name="checkout"></class>
+        </classes>
+    </test>
+
+</suite>
